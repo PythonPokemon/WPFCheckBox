@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPFCheckBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCheckBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Viewbox>
+    <StackPanel>
+        <Label FontWeight="Bold">Pizzabelag</Label>
+        <CheckBox Name="cbAlleZutaten" IsThreeState="True" Checked="cbAlleZutaten_Checked" Unchecked="cbAlleZutaten_Checked">Alles hinzufügen</CheckBox>
+        <StackPanel Margin="10">
+            <CheckBox Name="cbSalami" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">
+            <TextBlock>
+                Salami <Run Foreground="Red" FontWeight="Bold" >Spicy</Run>
+            </TextBlock>
+            </CheckBox>
+            <CheckBox Name="cbSchinken" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">Schinken</CheckBox>
+            <CheckBox Name="cbMozarella" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">Mozzarella</CheckBox>
+            <CheckBox Name="cbThunfisch" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">Thunfisch</CheckBox>
+            <CheckBox Name="cbTomaten" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">Tomaten</CheckBox>
+            <CheckBox Name="cbCremeFreche" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">Creme Freche</CheckBox>
+            <CheckBox Name="cbChampingnons" Checked="cbCheckÄnderung" Unchecked="cbCheckÄnderung">Champignons</CheckBox>
+        </StackPanel>
+    </StackPanel>
+    </Viewbox>
+</Window>
